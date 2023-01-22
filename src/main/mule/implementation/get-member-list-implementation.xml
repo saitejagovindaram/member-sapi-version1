@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<flow name="get-member-list-implementationFlow" doc:id="bdb6c389-62f8-43dd-b44e-ab9daaadb52e" >
+		<logger level="INFO" doc:name="Logger" doc:id="b509ca40-2d59-4b37-85a3-ba1351a914cf" message='#[{ &#10;TimeStamp: "2018-07-31 T16: 57: 34 +00: 00",&#10;transactionID: correlationId,&#10;"Name": "Order Process API",&#10;FlowName: "validate-customerFlow",&#10;BusinessProcessName: "Customer Validation",&#10;Category: "standard",&#10;OriginatingApplication: "hybris",&#10;DestinationApplication: "SSN Validation System API",  &#10;CustomerId: 1102034, &#10;Email: "ab********.com",&#10;PhoneNumber: "87*********",&#10;txnState: "REQUEST"&#10;}]'/>
+		<error-handler ref="process_errorError_Handler" />
+	</flow>
+</mule>
