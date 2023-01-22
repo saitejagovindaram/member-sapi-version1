@@ -1,0 +1,96 @@
+#%RAML 1.0 DataType
+
+type: object
+properties:
+  firstName:
+    required: false
+    type: string
+    example: "Kumar"
+  lastName:
+    required: false
+    type: string
+    example: "Kumar"
+  maritalStatus:
+    required: false
+    type: string
+    example: "Married"
+  title:
+    required: false
+    type: string
+    enum:
+      - Mr
+      - Mrs
+    example: "Mr"                
+  gender:
+    description: This element will define gender of customer.
+    required: false
+    type: string
+    example: "Male"        
+  occupation:
+    description: This element will define occupation of customer.
+    required: false
+    type: string
+    example: "Kumar"
+  preferredName:
+    required: false
+    type: string
+    example: "Kumar" 
+  identity:
+    description: This element will define occupation of customer.
+    required: false
+    type: object
+    properties:
+      password:
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "eygfyewf"   
+      phoneCountry:                                                   
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "+91"
+      phoneNumber:
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "8756478576"
+      email:
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "Kumar@gmail.com"   
+  address:
+    description: This element will define address of customer.
+    required: false
+    type: object
+    properties:
+      country:
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        enum:
+          - India
+          - United State
+          - UK
+        example: "India"   
+      city:                                                   
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "Kolkata"
+      area:
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "SaltLake"
+      province:
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "0957587"
+      placeOfResidence:
+        description: This element will define occupation of customer.
+        required: false
+        type: string
+        example: "House no - 111"
